@@ -1,0 +1,240 @@
+@charset "UTF-8";
+/* TYPOGRAPHY */
+.u-content {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5em;
+  color: #333;
+}
+
+.u-content * {
+  padding: 0;
+  margin: 0;
+  vertical-align: baseline;
+}
+
+.u-content a {
+  color: #1b09e0;
+}
+
+.u-content a:hover {
+  color: #1b09e0;
+}
+
+.u-content a:visited {
+  color: #609;
+}
+
+.u-content b,
+.u-content strong {
+  font-weight: 700;
+}
+
+.u-content p {
+  margin: 0 0 1.5em 0;
+  font-size: 1em;
+}
+
+.u-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+.u-content img[style*='float:left'] {
+  margin: 0.33em 1.33em 1.33em 0;
+}
+
+.u-content img[style*='float:right'] {
+  margin: 0.33em 0 1.33em 1.33em;
+}
+
+.u-content sup {
+  vertical-align: super;
+  font-size: 80%;
+}
+
+.u-content sub {
+  vertical-align: sub;
+  font-size: 80%;
+}
+
+.u-content h1 {
+  font: normal bold 2em/1.1 Arial, Helvetica, sans-serif;
+  margin: 0 0 0.5em 0;
+}
+
+.u-content h2 {
+  font: normal bold 1.75em/1.1 Arial, Helvetica, sans-serif;
+  margin: 0 0 0.5em 0;
+}
+
+.u-content h3 {
+  font: normal bold 1.5em/1.1 Arial, Helvetica, sans-serif;
+  margin: 0 0 0.5em 0;
+}
+
+.u-content h4 {
+  font: normal bold 1.33em/1.1 Arial, Helvetica, sans-serif;
+  margin: 0 0 0.5em 0;
+}
+
+.u-content h5 {
+  font: normal bold 1.2em/1.1 Arial, Helvetica, sans-serif;
+  margin: 0 0 0.5em 0;
+}
+
+.u-content h6 {
+  font: normal bold 1em/1.1 Arial, Helvetica, sans-serif;
+  margin: 0 0 0.5em 0;
+}
+
+.u-content ul, .u-content ol {
+  margin: 0 0 1.5em 3em;
+}
+
+.u-content ul > li {
+  margin: 0 0 0.5em 0;
+  font-size: 1em;
+  line-height: 1.2em;
+  list-style-type: disc;
+}
+
+.u-content ol > li {
+  margin: 0 0 0.5em 0;
+  font-size: 1em;
+  line-height: 1.2em;
+  list-style-type: decimal;
+}
+
+.u-content li ul, .u-content li ol {
+  margin: 0.5em 0 1em 3em;
+}
+
+.u-content hr {
+  height: 0;
+  line-height: 0;
+  font-size: 0;
+  display: block;
+  border: none;
+  border-bottom: solid 1px #333;
+  margin: 15px 0;
+}
+
+.u-content table {
+  width: 100%;
+  float: none;
+  border-collapse: collapse;
+  margin: 0 0 1.5em 0;
+  max-width: 100%;
+}
+
+.u-content table[cellspacing] {
+  border-collapse: separate;
+}
+
+.u-content td, .u-content th {
+  padding: 0.333em;
+  font-size: 0.8em;
+  line-height: 1.2em;
+}
+
+.u-content th {
+  background-color: #eee;
+  font-weight: 700;
+}
+
+.u-content td p:last-child {
+  margin-bottom: 0;
+}
+
+.u-content td[valign='middle'] {
+  vertical-align: middle;
+}
+
+.u-content td[valign='top'] {
+  vertical-align: top;
+}
+
+.u-content td[valign='bottom'] {
+  vertical-align: bottom;
+}
+
+.u-content td img {
+  max-width: inherit;
+}
+
+.u-content table[border="1"] td,
+.u-content table[border="1"] th,
+.u-content table td,
+.u-content table th {
+  border: solid 1px gray;
+}
+
+.u-content table[border="0"] td,
+.u-content table[border="0"] th {
+  border: none  !important;
+  padding: 0;
+}
+
+.u-content .table-responsive {
+  min-height: .01%;
+  overflow-x: auto;
+}
+
+.u-content .accent {
+  border-left: solid 3px #666666;
+  padding: 1em;
+  margin: 1.5em 0;
+  font-size: 0.8em;
+  line-height: 1.5em;
+  background-color: #f5f5f5;
+}
+
+.u-content blockquote {
+  padding: 1em 2em 0.5em;
+  margin: 1.5em 0;
+  font-size: 0.8em;
+  line-height: 1.5em;
+  background-color: #f5f5f5;
+  quotes: "“" "”" "‘" "’";
+}
+
+.u-content blockquote:before {
+  color: #666;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+.u-content blockquote:after {
+  color: #666;
+  content: close-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-left: 0.25em;
+  vertical-align: -0.6em;
+}
+
+.u-content pre {
+  padding: 1em;
+  margin: 1.5em 0;
+  font-size: 1em;
+  line-height: 1.5em;
+  background-color: #f5f5f5;
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .u-content {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .u-content {
+    font-size: 1.15rem;
+  }
+}
+
+/*/TYPOGRAPFY*/
